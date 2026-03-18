@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Vignesh Linga Constructions</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+        }
+        .contact-info-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .contact-info-card i {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            background: var(--glass);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--muted-text);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .form-control {
+            width: 100%;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        textarea.form-control {
+            height: 150px;
+            resize: none;
+        }
+        /* Mobile adjustment */
+        @media (max-width: 992px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader"><div class="loader-logo">VLC</div></div>
+    
+    <nav>
+        <div class="container nav-container">
+            <a href="../index" class="logo">Vignesh<span>Linga</span></a>
+            <ul class="nav-links">
+                <li><a href="../index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="section-padding" style="text-align: center; padding-top: 150px;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem;">Connect With <span class="text-gold">Us</span></h1>
+            <p style="color: var(--muted-text); max-width: 600px; margin: 20px auto;">Ready to start your next landmark project? Reach out to our team of experts today.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container contact-grid">
+            <div class="animate-on-scroll">
+                <h2 style="margin-bottom: 30px;">Corporate <span class="text-gold">Inquiry</span></h2>
+                <div class="contact-info-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <div>
+                        <h3>Headquarters</h3>
+                        <p style="color: var(--muted-text); margin-top: 5px;">123 Luxury Corporate Tower, CBD Phase 1, Metropolis 500012</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h3>Direct Line</h3>
+                        <p style="color: var(--muted-text); margin-top: 5px;">+1 (234) 567 8901<br>+1 (098) 765 4321</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <div>
+                        <h3>Electronic Mail</h3>
+                        <p style="color: var(--muted-text); margin-top: 5px;">projects@vigneshlinga.in<br>info@vigneshlinga.in</p>
+                    </div>
+                </div>
+                <div class="glass-card" style="margin-top: 30px;">
+                    <h3 class="text-gold" style="margin-bottom: 10px;">Business Hours</h3>
+                    <p>Monday - Friday: 09:00 AM - 06:00 PM</p>
+                    <p>Saturday: 10:00 AM - 02:00 PM</p>
+                </div>
+            </div>
+
+            <div class="glass-card animate-on-scroll">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-premium" style="width: 100%; border-radius: 10px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section style="height: 450px; width: 100%; filter: grayscale(1) invert(1);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1710775000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vignesh Linga Constructions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Basic simulation of form submission
+            const btn = this.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Thank you for reaching out! Our team will contact you shortly.');
+                this.reset();
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
